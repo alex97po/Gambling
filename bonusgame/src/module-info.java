@@ -1,0 +1,3 @@
+module bonusgame {
+    exports main;
+}

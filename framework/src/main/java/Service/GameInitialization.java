@@ -1,5 +1,6 @@
 package Service;
 
+import Entity.Game;
 import Entity.Player;
 import Factory.BonusGameFacroty;
 import Factory.GameFactory;
@@ -7,10 +8,13 @@ import Factory.SlotGameFactory;
 
 import java.util.Scanner;
 
+/**
+ * Welcome new user and create instance of certain game user will play then
+ */
 public class GameInitialization {
     static GameFactory gameFactory;
     static Player player;
-    public static void gameInit () {
+    public static Game gameInit () {
         player = new Player();
         System.out.println(Message.WELCOME);
         System.out.println(Message.CHOOSE_GAME);
@@ -20,10 +24,10 @@ public class GameInitialization {
         InputValidation.gameChoose(scanner);
         if (scanner.nextInt() == 1) {
            gameFactory = new SlotGameFactory();
-           gameFactory.launchGame(player.getMoneyAmount());
+           return gameFactory.launchGame(player.getMoneyAmount());
         }else {
             gameFactory = new BonusGameFacroty();
-            gameFactory.launchGame(player.getMoneyAmount());
+            return gameFactory.launchGame(player.getMoneyAmount());
         }
     }
 }

@@ -1,9 +1,9 @@
-public class Round {
+public class RoundSlot {
     private static int money;
     public static int moneySpent;
     public static int moneyWon;
 
-    public Round (int money) {
+    public RoundSlot(int money) {
         this.money = money;
     }
 
