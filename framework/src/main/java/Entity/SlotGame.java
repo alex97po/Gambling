@@ -1,4 +1,5 @@
 package Entity;
+import static SlotGame.NormalBet.makeNormalBet;
 
 public class SlotGame extends Game {
     public SlotGame(double money) {
@@ -7,5 +8,6 @@ public class SlotGame extends Game {
 
     @Override
     public void makeBet(){
+        makeNormalBet(getMoney());
     }
 }

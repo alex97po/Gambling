@@ -1,4 +1,5 @@
 package Entity;
+import static BonusGame.BonusGame.startBonusGame;
 
 public class BonusGame extends Game{
 
@@ -7,6 +8,6 @@ public class BonusGame extends Game{
     }
     @Override
     public void makeBet() {
-
+        startBonusGame(getMoney());
     }
 }

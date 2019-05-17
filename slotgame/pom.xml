@@ -6,6 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>slotgame</artifactId>
 
+
     <parent>
         <artifactId>netentTest</artifactId>
         <groupId>com.netent.games.simplegames</groupId>

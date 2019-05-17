@@ -6,4 +6,5 @@ public class Message {
     public static final String SLOTGAME = "1. SLOTGAME ";
     public static final String BONUSGAME = "2. BONUSGAME";
     public static final String WRONG_NUMBER = "Wrong input! Make another shot!";
+    public static final String LACK_OF_MONEY = "Sorry, but you don't have enough money to continue";
 }

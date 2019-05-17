@@ -11,5 +11,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="bonusgame" exported="" />
+    <orderEntry type="module" module-name="slotgame" exported="" />
   </component>
 </module>
