@@ -11,8 +11,10 @@ public abstract class Game {
         return money;
     }
 
-
     public void makeBet() {
+    }
 
+    public static void setMoney(double money) {
+        Game.money = money;
     }
 }

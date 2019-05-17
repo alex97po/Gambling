@@ -8,6 +8,7 @@ public class SlotGame extends Game {
 
     @Override
     public void makeBet(){
-        makeNormalBet(getMoney());
+        double updateMoney = makeNormalBet(getMoney());
+        setMoney(updateMoney);
     }
 }

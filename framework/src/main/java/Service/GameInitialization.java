@@ -16,7 +16,7 @@ public class GameInitialization {
     private static GameFactory gameFactory;
     private static Player player;
     public static Game gameInit () {
-        player = new Player(1000000);
+        player = new Player(10000000);
         System.out.println(Message.WELCOME);
         System.out.println(Message.CHOOSE_GAME);
         System.out.println(Message.SLOTGAME);

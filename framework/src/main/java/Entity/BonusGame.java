@@ -8,6 +8,7 @@ public class BonusGame extends Game{
     }
     @Override
     public void makeBet() {
-        startBasicGame(getMoney());
+        double updateMoney = startBasicGame(getMoney());
+        setMoney(updateMoney);
     }
 }

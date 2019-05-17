@@ -1,7 +1,7 @@
 package SlotGame;
 
 public class FreeBet {
-    public static void makeFreeBet (double userMoney) {
+    public static double makeFreeBet (double userMoney) {
         if (Math.random()<= Settings.CHANCE_TO_WIN_COINS) {
             System.out.println(Messages.USER_WON_MONEY);
             userMoney = userMoney + Settings.WON_COINS;
@@ -10,6 +10,7 @@ public class FreeBet {
             System.out.println(Messages.USER_WON_FREE_ROUND);
             makeFreeBet(userMoney);
         }
+        return userMoney;
     }
 
 }

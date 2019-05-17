@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class BonusGame {
     private static BlackBoxes boxes;
-    public static void startBonusGame(double userMoney) {
+    public static double startBonusGame(double userMoney) {
         boxes = new BlackBoxes();
         HashMap <Integer, Boolean> blackBoxes = boxes.initiateBoxes();
         System.out.println(Messages.CHOOSE_BOX);
@@ -27,5 +27,6 @@ public class BonusGame {
             flag = blackBoxes.get(userChoice);
         }
         System.out.println(Messages.EMPTY_BOX);
+        return userMoney;
     }
 }
