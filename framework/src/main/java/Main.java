@@ -1,12 +1,12 @@
-import Entity.Game;
-import Service.GameInitialization;
-import Service.GameProceeding;
+import controller.Controller;
+import controller.MainController;
+import entity.Player;
 
 public class Main {
     public static void main(String[] args) {
-        GameInitialization gameInitialization = new GameInitialization();
-        Game currentGame = gameInitialization.gameInit();
-        GameProceeding gameProceeding = new GameProceeding();
-        gameProceeding.gameStart(currentGame);
+        Player player = new Player(1000000);
+        MainController mainController = new MainController();
+        Controller currentGameController = mainController.userChooseGameToPlay();
+        currentGameController.launchGame(player.getMoneyAmount());
     }
 }
